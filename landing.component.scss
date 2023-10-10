@@ -1,0 +1,622 @@
+@import "../../layout/default-layout/default-layout.component.scss";
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Birthstone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Birthstone&family=Nanum+Gothic+Coding&display=swap");
+
+.avt-landing {
+    margin-top: $header-height;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    width: 50%;
+    transform: translate(-25%, -100%);
+    left: 50%;
+    text-align: center;
+    div {
+        h1 {
+            margin: 0;
+            color: #1e3e86;
+            font-size: 5rem;
+            font-family: "STIX Two Text", serif;
+            h3 {
+                font-size: 5rem;
+                margin-bottom: 0;
+                font-family: "STIX Two Text", serif;
+            }
+        }
+        p {
+            font-family: "Birthstone", cursive;
+            font-size: 2rem;
+        }
+        span {
+            font-size: 1.5rem;
+            font-family: "Nanum Gothic Coding", monospace;
+        }
+    }
+}
+
+.btn-lg-square {
+    border: 0;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.card-header {
+    display: inline-block;
+    border: 0px solid #f5efef;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Thêm bóng cho viền */
+}
+
+.linevv {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: #080300;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+@keyframes text-effect-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .slide {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .slide {
+        flex: 0 0 33.33%;
+    }
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.thumb {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(-135deg, #fff 25%, transparent 25%);
+    background-size: 40px;
+}
+
+.image-overlay::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+    background-size: 40px;
+}
+
+.image-overlay {
+    background-image: url(http://www.theimperiaspa.com/wp-content/uploads/2016/04/floral-decorated-floor-wall-blue.png);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    text-align: center;
+}
+
+.image-overlay h2 {
+    font-weight: 20px;
+    padding-bottom: 15px;
+}
+
+.space {
+    height: 30px;
+}
+
+.hover-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: colorChange 2s infinite;
+}
+
+.hover-button:hover {
+    animation: none;
+    background-color: #45a049;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #4caf50;
+    }
+    50% {
+        background-color: #1c2b4f;
+    }
+    100% {
+        background-color: #af4c84;
+    }
+}
+
+.container-fluidd {
+    top: 50%;
+    position: relative;
+    display: table;
+    background-image: radial-gradient(rgba(241, 241, 161, 0.893), #f19956);
+}
+.content-image {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.icon-wrapper {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    transform: translateY(30%);
+    margin-left: -80px;
+}
+.list-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0;
+    height: 100%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.icon-wrapper img {
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.icon-content {
+    margin-left: 100px;
+    margin: 0;
+}
+.aaa {
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    padding: 3rem;
+}
+
+.lineV {
+    width: 50px;
+    height: 0;
+    border-bottom: 1px solid #080300;
+    margin-bottom: 20px;
+}
+
+.border-left {
+    border-left: 1px solid #7eb2e6;
+}
+
+.display-4 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+}
+
+.overflow-image {
+    position: relative;
+    height: 100%;
+}
+
+.overflow-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: #2fbeae;
+    padding: 10px;
+    transform: translateY(50%);
+    transition: transform 0.8s;
+}
+.card-body1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: #ff508b;
+    padding: 10px;
+    transform: translateY(50%);
+    transition: transform 0.8s;
+}
+
+.card-body2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: #62c052;
+    padding: 10px;
+    transform: translateY(50%);
+    transition: transform 0.8s;
+}
+.card-title {
+    color: #ecf2f0;
+    font-size: 30px;
+}
+.card-text {
+    color: #ecf2f0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.card:hover .card-body {
+    transform: translateY(0);
+}
+.card:hover .card-body1 {
+    transform: translateY(0);
+}
+.card:hover .card-body2 {
+    transform: translateY(0);
+}
+.lineee {
+    width: auto;
+    height: 0;
+    border-bottom: 1px solid #f0e9e6;
+    margin-bottom: 20px;
+}
+nav {
+    text-align: center;
+    flex-direction: row;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.content {
+    display: none;
+    padding: 50px;
+}
+
+#home:checked ~ #home-content,
+#about:checked ~ #about-content,
+#services:checked ~ #services-content,
+#contact:checked ~ #contact-content {
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav label {
+    padding: 1px 30px;
+    text-decoration: none;
+    color: #e11111;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.justify-align {
+    text-align: justify;
+}
+nav label::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #906c5f;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav input[type="radio"]:checked + label::after {
+    width: 100%;
+}
+.line {
+    width: 50px;
+    height: 0;
+    border-bottom: 1px solid #f0e9e6;
+    margin: 20px auto;
+}
+
+// @media only screen and (min-width: 992px) {}
+.vuFont {
+    font-size: 17px;
+    font-weight: normal;
+    color: #333;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.vuImg1 {
+    background-position: 0 75% !important;
+    background: white;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.06);
+    background-image: url(https://www.theimperiaspa.com/wp-content/uploads/2016/04/pink-flower-petal-on-corner-bgimage50eb.png?id=7981);
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    background-repeat: no-repeat !important;
+    border-left-color: rgba(0, 0, 0, 0.06) !important;
+    border-left-style: solid !important;
+    border-right-color: rgba(0, 0, 0, 0.06) !important;
+    border-right-style: solid !important;
+    border-top-color: rgba(0, 0, 0, 0.06) !important;
+    border-top-style: solid !important;
+    border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+    border-bottom-style: solid !important;
+}
+.numUp {
+    background-color: rgba(210, 215, 215, 0.27);
+}
+
+.columns {
+    padding: 20px;
+    margin: 50px;
+}
+
+.title-content {
+    color: #0d0f55;
+    font-size: 30px;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 50px;
+    background-color: #e7e3e3;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.title-display {
+    position: relative;
+    text-align: center;
+}
+
+.img-ser {
+    width: 290px;
+    height: 265px;
+}
+
+.clinic-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    color: rgb(176, 137, 51);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(226, 187, 96) 52.72%, rgb(254, 249, 243) 100%);
+}
+.clinic-tittle {
+    color: rgb(176, 137, 51);
+}
+
+.txnoK {
+    display: flex;
+    max-width: 144px;
+    height: 2px;
+    background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(176, 138, 50) 91.63%, rgb(220, 210, 187) 100%);
+}
+
+.header-us {
+    text-align: center;
+    color: #5b9c50;
+}
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    border: 0px solid #d2d1d1ce;
+    background-color: white;
+    padding: 12px;
+}
+.icon-anh {
+    margin-left: -5rem;
+    margin-top: 4rem;
+}
+
+.xxx {
+    overflow-x: hidden;
+}
+.icon-anh {
+    margin-left: -5rem;
+    margin-top: 4rem;
+}
+.anh-around {
+    min-width: 100%;
+    min-height: 100%;
+}
+.thumnail-img {
+    object-fit: cover;
+}
+.therapy {
+    display: inline-flex;
+}
+.title-slider-mobile-tablet {
+    display: none;
+}
+// Responsive Pc first
+@media (max-width: 1200px) {
+    .thumnail-img {
+        object-fit: unset !important;
+    }
+    .method {
+        padding-right: 5% !important;
+        padding-left: 15% !important;
+    }
+    .list-icon {
+        transform: translateX(25%);
+    }
+}
+
+@media (max-width: 992px) {
+    .list-clicnic {
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 3rem !important;
+    }
+    .color-change {
+        margin: auto;
+    }
+    .title-slider-mobile-tablet {
+        display: block;
+    }
+    .title-slider {
+        text-align: center;
+        padding: 3rem 0;
+    }
+    .aaa {
+        width: 7rem;
+        height: 7rem;
+        img {
+            transform: translateY(-10%) !important;
+        }
+    }
+    .list-icon {
+        transform: translateX(50%);
+    }
+    .title {
+        top: 35%;
+        div {
+            h1 {
+                font-size: 2rem !important;
+                h3 {
+                    font-size: 2rem !important;
+                    margin-left: 1rem !important;
+                }
+            }
+            p {
+                line-height: unset;
+                margin: 0;
+                position: relative;
+                top: -0.5rem;
+            }
+        }
+    }
+    .form-sendmail {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-icon {
+        flex-direction: row;
+        top: 0;
+        width: 100%;
+        height: unset;
+        transform: translatey(-50%);
+    }
+    .method {
+        padding: 0 !important;
+    }
+    .description {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+    .title {
+        top: 30%;
+        width: 80%;
+        left: 40%;
+        div {
+            h1 {
+                font-size: 1.5rem;
+                h3 {
+                    margin-left: 0.5rem !important;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .btn-success {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .icon-anh {
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 576px) {
+    .title {
+        display: none;
+    }
+    .header-us {
+        font-size: 1.5rem;
+    }
+}
